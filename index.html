@@ -132,85 +132,121 @@
 
         </main>
         
-        <section id="about" class="py-16 relative scroll-mt-24 max-w-6xl mx-auto w-full">
+   <section id="about" class="py-16 relative scroll-mt-24 max-w-6xl mx-auto w-full px-4">
+    
+    <!-- Section Title -->
+    <div class="text-center md:text-left mb-12 space-y-2">
+        <h3 class="text-[11px] font-bold tracking-widest text-cyan-400 uppercase">My Journey</h3>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">
+            About <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Me</span>
+        </h2>
+        <div class="w-12 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto md:mx-0 rounded-full"></div>
+    </div>
+
+    <!-- 3-Column Balanced Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        
+        <!-- Column 1: Image Wrapper (Fixed khali space & Full Color Lighting) -->
+        <div class="lg:col-span-4 group relative rounded-2xl overflow-hidden bg-slate-900/40 backdrop-blur-md border border-white/10 p-4 flex flex-col justify-between shadow-[0_0_20px_rgba(34,211,238,0.05)] transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]">
             
-            <div class="text-center md:text-left mb-12 space-y-2">
-                <h3 class="text-[11px] font-bold tracking-widest text-cyan-400 uppercase">My Journey</h3>
-                <h2 class="text-2xl sm:text-3xl font-bold text-white">
-                    About <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Me</span>
-                </h2>
-                <div class="w-12 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto md:mx-0 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Constant Soft Ambient Glow behind image -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-purple-500/10 opacity-70 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            
+            <!-- Image Box -->
+            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-slate-950/60 border border-white/5 shadow-inner">
+                <!-- Image is kept in full original color (No grayscale) -->
+                <img src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.30808-6/727287326_965255326341506_1008152343004777590_n.jpg?stp=dst-jpg_tt6&cstp=mx921x1001&ctp=s921x1001&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGfV7llZEOp4V4VWCU4tIJeZc85wxRMTeRlzznDFExN5GDQOWR7w0vc0HGT59bemK-s0JAk0bt4rw_T-dSMURpN&_nc_ohc=uwTsggYDo6IQ7kNvwHwHLvl&_nc_oc=Adpig6QeYUr5eRGXs-FubUqOoSQGqevonly-m-RIq1FPO9cMOOJ-Djt7jpLeiHV_3kE&_nc_zt=23&_nc_ht=scontent.fisb6-2.fna&_nc_gid=wHcFd0O4jLVKxSMOA3qAzA&_nc_ss=7b2a8&oh=00_Af9Pwday1ZhDHKrXpxXwalfDemS6vgg_-muGlWiTJvuaAQ&oe=6A395BA5" alt="Faheem Khan" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 
-                <div class="lg:col-span-7 bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-2xl p-6 md:p-8 shadow-xl space-y-4">
-                    <h4 class="text-lg md:text-xl font-bold text-white leading-snug">
-                        Building Digital Solutions with 2 Years of Frontend Expertise.
-                    </h4>
-                    <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-                        <p>
-                            Hello! I am <span class="text-cyan-400 font-medium">Faheem Khan</span>, a dedicated web developer based in Quetta, Pakistan. For the past **2 years**, I have been actively crafting pixel-perfect frontend layouts, turning complex UI/UX designs into seamless, high-performance web experiences.
-                        </p>
-                        <p>
-                            To expand my architectural capabilities, I am expanding my expertise into **Backend Engineering**. This allows me to build robust server-side logics, handle secure database operations, and deliver fully integrated full-stack applications.
-                        </p>
-                        <p>
-                            My technical background is backed by formal vocational training from top platforms like <span class="text-purple-400 font-semibold">Saylani Mass IT Training (SMIT)</span> and <span class="text-purple-400 font-semibold">Bano Qabil</span>, which helped refine my engineering principles to meet modern industry demands.
-                        </p>
-                    </div>
+                <!-- Premium bottom lighting overlay inside the image box -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+            </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 mt-6 border-t border-white/5 text-xs">
-                        <div><span class="text-cyan-400 font-medium">Location:</span> <span class="text-slate-400">Quetta, Pakistan</span></div>
-                        <div><span class="text-cyan-400 font-medium">Core Focus:</span> <span class="text-slate-400">Full-Stack Development</span></div>
-                        <div><span class="text-cyan-400 font-medium">Experience:</span> <span class="text-slate-400">2+ Years (Frontend)</span></div>
-                        <div><span class="text-cyan-400 font-medium">Status:</span> <span class="text-teal-400 font-medium">Available for Projects</span></div>
+            <!-- Filled Bottom Section: Identity & Dynamic Interactive Hint -->
+            <div class="mt-4 p-3 bg-slate-950/60 rounded-xl border border-white/5 flex items-center justify-between z-10">
+                <div class="text-left">
+                    <span class="text-xs font-bold tracking-wider text-white uppercase block">Faheem M. Shahi</span>
+                    <span class="text-[10px] text-cyan-400 block font-medium mt-0.5">Frontend Developer</span>
+                </div>
+                <!-- Interactive glow ring signaling it's clickable -->
+                <span class="px-2.5 py-1 text-[10px] font-medium text-slate-400 bg-slate-900 border border-white/10 rounded-md group-hover:text-cyan-400 group-hover:border-cyan-400/30 transition-all duration-300 cursor-pointer">
+                    View Full
+                </span>
+            </div>
+        </div>
+        
+        <!-- Column 2: Main Text Content -->
+        <div class="lg:col-span-5 bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-2xl p-6 md:p-8 shadow-xl flex flex-col justify-between space-y-4">
+            <div class="space-y-4">
+                <h4 class="text-lg md:text-xl font-bold text-white leading-snug">
+                    Building Digital Solutions with 2 Years of Frontend Expertise.
+                </h4>
+                <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+                    <p>
+                        Hello! I am <span class="text-cyan-400 font-medium">Faheem Khan</span>, a dedicated web developer based in Quetta, Pakistan. For the past **2 years**, I have been actively crafting pixel-perfect frontend layouts, turning complex UI/UX designs into seamless, high-performance web experiences.
+                    </p>
+                    <p>
+                        To expand my architectural capabilities, I am expanding my expertise into **Backend Engineering**. This allows me to build robust server-side logics, handle secure database operations, and deliver fully integrated full-stack applications.
+                    </p>
+                    <p>
+                        My technical background is backed by formal vocational training from top platforms like <span class="text-purple-400 font-semibold">Saylani Mass IT Training (SMIT)</span> and <span class="text-purple-400 font-semibold">Bano Qabil</span>, which helped refine my engineering principles to meet modern industry demands.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Meta Quick Info Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 mt-6 border-t border-white/5 text-xs">
+                <div><span class="text-cyan-400 font-medium">Location:</span> <span class="text-slate-400">Quetta, Pakistan</span></div>
+                <div><span class="text-cyan-400 font-medium">Core Focus:</span> <span class="text-slate-400">Full-Stack Development</span></div>
+                <div><span class="text-cyan-400 font-medium">Experience:</span> <span class="text-slate-400">2+ Years (Frontend)</span></div>
+                <div><span class="text-cyan-400 font-medium">Status:</span> <span class="text-teal-400 font-medium">Available for Projects</span></div>
+            </div>
+        </div>
+
+        <!-- Column 3: Tech Arsenal & Skill Progress -->
+        <div class="lg:col-span-3 flex flex-col gap-4">
+            
+            <!-- Tech Arsenal Card -->
+            <div class="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-5 shadow-lg flex-1">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 mr-2"></span> Tech Arsenal
+                </h5>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2.5 py-1 text-[11px] font-medium rounded-md bg-slate-950 border border-slate-800/60 text-orange-400">HTML5</span>
+                    <span class="px-2.5 py-1 text-[11px] font-medium rounded-md bg-slate-950 border border-slate-800/60 text-blue-400">CSS3</span>
+                    <span class="px-2.5 py-1 text-[11px] font-medium rounded-md bg-slate-950 border border-slate-800/60 text-cyan-400">Tailwind</span>
+                    <span class="px-2.5 py-1 text-[11px] font-medium rounded-md bg-slate-950 border border-slate-800/60 text-yellow-400">JavaScript</span>
+                    <span class="px-2.5 py-1 text-[11px] font-medium rounded-md bg-slate-950 border border-slate-800/60 text-purple-400">Backend</span>
+                </div>
+            </div>
+
+            <!-- Skills Stats Card -->
+            <div class="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-5 shadow-lg flex-1 space-y-4 justify-center flex flex-col">
+                
+                <div class="space-y-1.5">
+                    <div class="flex justify-between text-xs font-medium text-slate-300">
+                        <span>Frontend Design</span>
+                        <span class="text-cyan-400">95%</span>
+                    </div>
+                    <div class="w-full h-1.5 bg-slate-950 rounded-full overflow-hidden">
+                        <div class="h-full bg-gradient-to-r from-cyan-500 to-teal-400 rounded-full" style="width: 95%"></div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-5 space-y-4">
-                    
-                    <div class="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-5 shadow-lg">
-                        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 mr-2"></span> Tech Arsenal
-                        </h5>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-950 border border-slate-800 text-orange-400">HTML5</span>
-                            <span class="px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-950 border border-slate-800 text-blue-400">CSS3</span>
-                            <span class="px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-950 border border-slate-800 text-cyan-400">Tailwind CSS</span>
-                            <span class="px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-950 border border-slate-800 text-yellow-400">JavaScript</span>
-                            <span class="px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-950 border border-slate-800 text-purple-400">Backend Logic</span>
-                        </div>
+                <div class="space-y-1.5">
+                    <div class="flex justify-between text-xs font-medium text-slate-300">
+                        <span>Backend Logic</span>
+                        <span class="text-purple-400">80%</span>
                     </div>
-
-                    <div class="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-5 shadow-lg space-y-4">
-                        
-                        <div class="space-y-1.5">
-                            <div class="flex justify-between text-xs font-medium text-slate-300">
-                                <span>Frontend Web Design (2 Yrs)</span>
-                                <span class="text-cyan-400">95%</span>
-                            </div>
-                            <div class="w-full h-1.5 bg-slate-950 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-cyan-500 to-teal-400 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-
-                        <div class="space-y-1.5">
-                            <div class="flex justify-between text-xs font-medium text-slate-300">
-                                <span>Backend Logic & Systems</span>
-                                <span class="text-purple-400">80%</span>
-                            </div>
-                            <div class="w-full h-1.5 bg-slate-950 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-
+                    <div class="w-full h-1.5 bg-slate-950 rounded-full overflow-hidden">
+                        <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 80%"></div>
                     </div>
                 </div>
 
             </div>
-        </section>
+        </div>
 
+    </div>
+</section>
       <section id="projects" class="py-16 relative scroll-mt-24 max-w-6xl mx-auto w-full">
             
     <div class="text-center md:text-left mb-12 space-y-2">
